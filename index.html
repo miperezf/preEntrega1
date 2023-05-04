@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de Rol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Juego de Rol</h1>
+    </header>
+    <main>
+        <form id="character-form">
+            <h2>Crear un Personaje</h2>
+            <div class="form-group">
+                <label for="race-select">Raza:</label>
+                <select id="race-select" name="race">
+                    <option value="humano">Humano</option>
+                    <option value="elfo">Elfo</option>
+                    <option value="enano">Enano</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="strength-input">Fuerza:</label>
+                <input id="strength-input" type="number" name="strength" min="0" max="10" value="0">
+            </div>
+            <div class="form-group">
+                <label for="dexterity-input">Destreza:</label>
+                <input id="dexterity-input" type="number" name="dexterity" min="0" max="10" value="0">
+            </div>
+            <div class="form-group">
+                <label for="intelligence-input">Inteligencia:</label>
+                <input id="intelligence-input" type="number" name="intelligence" min="0" max="10" value="0">
+            </div>
+            <div class="form-group">
+                <label for="charisma-input">Carisma:</label>
+                <input id="charisma-input" type="number" name="charisma" min="0" max="10" value="0">
+            </div>
+            <button type="submit">Crear Personaje</button>
+        </form>
+        <div id="character-details">
+            <h2>Detalles del Personaje</h2>
+            <ul id="character-attributes"></ul>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
